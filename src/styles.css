@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#resetGame:disabled {
+    display : none;
+}
+
+#startGame:disabled {
+    display : none;
+}
+
+#container {
+    display : flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+
+#div-wrapper {
+    display: flex;
+    flex-direction : row;    
+}
+
+#currentPlayer {
+    margin-left: 20px;
+    display : flex;
+    align-items: center;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    font-size : 24px;
+    cursor : pointer;
+}
